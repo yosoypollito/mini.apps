@@ -1,6 +1,6 @@
 # Mini Apps
 
-> Created by: Daif
+> Created by Daif
 
 ### How to make a new commit?
 
