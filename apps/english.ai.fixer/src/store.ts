@@ -8,7 +8,12 @@ export type IHistory = {
 export const wrongEnglishText = writable('');
 export const fixedEnglishText = writable('');
 
-export const EnglishTextHistory = writable<Array<IHistory>>([]);
+const prevEnglishTextHistory = localStorage.getItem('EnglishTextHistory') || "[]";
+export const EnglishTextHistory = writable<Array<IHistory>>(JSON.parse(prevEnglishTextHistory));
+
+EnglishTextHistory.subscribe((value) => {
+  localStorage.setItem("EnglishTextHistory", JSON.stringify(value));
+})
 
 export const ShowModal = writable(false);
 export const ModalEnglishTexts = writable<IHistory>({
