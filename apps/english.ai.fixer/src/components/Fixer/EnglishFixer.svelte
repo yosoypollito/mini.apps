@@ -52,7 +52,8 @@
 <div
   class="grid grid-cols-[1fr_30%] gap-2 w-full h-full overflow-hidden relative items-center p-2"
 >
-  <div class="col-span-1 relative h-full w-full">
+  <div class="flex flex-col col-span-1 relative h-full w-full text-center">
+    <h1 class="text-2xl">Fix your english</h1>
     <TextArea
       placeholder="English text you want to fix..."
       handleInput={handleChangeWrongEnglish}
@@ -68,9 +69,9 @@
   </div>
 
   <div
-    class="col-span-1 flex flex-col gap-2 self-start w-full h-full overflow-auto"
+    class="col-span-1 flex flex-col gap-2 self-start w-full h-full overflow-auto text-center"
   >
-    <h2>History</h2>
+    <h2 class="text-2xl">History</h2>
     {#each $EnglishTextHistory as historyItem}
       <HistoryItem {...historyItem} />
     {/each}
