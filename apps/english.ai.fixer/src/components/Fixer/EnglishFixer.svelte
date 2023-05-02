@@ -61,7 +61,7 @@
     />
 
     <button
-      class="py-2 px-6 bg-gray-500 font-semibold absolute bottom-5 right-5 rounded-full shadow-lg border-2 border-gray-100"
+      class="py-2 px-6 bg-white font-semibold absolute bottom-5 right-5 rounded-lg shadow-md text-black text-sm uppercase border-2 border-gray-500"
       on:click={() => getFixedEnglish($wrongEnglishText)}
     >
       Fix english
