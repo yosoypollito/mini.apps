@@ -1,0 +1,25 @@
+---
+const { title } = Astro.props;
+import "@fontsource/raleway";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | Daif English Fixer</title>
+  </head>
+  <body
+    class="max-w-screen text-white bg-gray-700 grid grid-rows-[min-content_1fr_min-content] h-screen"
+  >
+    <slot />
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: "Raleway", sans-serif;
+  }
+</style>

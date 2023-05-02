@@ -1,0 +1,13 @@
+import { defineConfig } from 'astro/config';
+
+// https://astro.build/config
+import tailwind from '@astrojs/tailwind';
+import svelte from "@astrojs/svelte";
+
+export default defineConfig({
+  integrations: [tailwind({
+    config: {
+      path: './tailwind.config.cjs'
+    }
+  }), svelte()],
+});

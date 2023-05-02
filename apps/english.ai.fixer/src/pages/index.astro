@@ -1,0 +1,15 @@
+---
+import EnglishFixerLayout from "@layouts/EnglishFixerLayout.astro";
+import EnglishFixer from "@components/Fixer/EnglishFixer.svelte";
+import Footer from "@components/Footer.astro";
+---
+
+<EnglishFixerLayout title="Home">
+	<header class="flex flex-row justify-center p-2 row-span-1 text">
+		<h1 class="text-3xl font-semibold">Fix your english text</h1>
+	</header>
+
+	<EnglishFixer client:visible />
+
+	<Footer />
+</EnglishFixerLayout>
