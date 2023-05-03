@@ -72,7 +72,7 @@
     class="col-span-1 flex flex-col gap-2 self-start w-full h-full overflow-auto text-center"
   >
     <h2 class="text-2xl">History</h2>
-    {#each $EnglishTextHistory as historyItem}
+    {#each $EnglishTextHistory.reverse() as historyItem}
       <HistoryItem {...historyItem} />
     {/each}
   </div>
